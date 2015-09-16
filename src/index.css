@@ -1,0 +1,36 @@
+.hire-thumbnail-bar {
+	width: 100%; 
+	height: 80px;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+.hire-thumbnail-bar > div {
+	white-space: nowrap;
+}
+
+.hire-thumbnail-bar > div > span {
+	width: 120px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 12px;
+}
+
+.hire-thumbnail-bar > div > span.selected {
+	border: 1px solid purple;
+}
+
+.hire-thumbnail-bar img {
+	width: 100%;
+	vertical-align: top;
+	cursor: pointer;
+	transition: opacity 0.4s;
+}
+
+.hire-thumbnail-bar img[data-src] {
+	opacity: 0;
+}
+
+.hire-thumbnail-bar img[src] {
+	opacity: 1;
+}

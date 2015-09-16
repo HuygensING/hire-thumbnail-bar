@@ -1,0 +1,42 @@
+{
+  "name": "hire-thumbnail-bar",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "bump": "hi-bump",
+    "start": "scripts/watch.sh",
+    "test": "mocha --compilers js:babel/register --recursive test",
+    "test:watch": "nodemon -x \"mocha --compilers js:babel/register --recursive --watch test\" -w test -w build",
+    "update": "git pull && npm i"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "peerDependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.12",
+    "babel-plugin-object-assign": "^1.2.1",
+    "babelify": "^6.1.3",
+    "brfs": "^1.4.0",
+    "classlist-polyfill": "^1.0.2",
+    "derequire": "^2.0.0",
+    "expect": "~1.9.0",
+    "hi-bump": "^1.1.1",
+    "jsdom": "^6.3.0",
+    "mocha": "^2.2.5",
+    "nodemon": "^1.4.0",
+    "should": "^7.0.2",
+    "sinon": "~1.16.1",
+    "watchify": "^3.3.0"
+  },
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "insert-css": "^0.2.0",
+    "react-redux": "^0.9.0",
+    "redux": "^1.0.1",
+    "redux-thunk": "^0.1.0",
+    "xhr": "^2.0.3"
+  }
+}
